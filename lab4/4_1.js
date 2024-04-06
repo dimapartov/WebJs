@@ -1,32 +1,18 @@
-function min_(a, b) {
-    return Math.min(a[0], a[1], b)
+function minNumber(number1, number2) {
+    return Math.min(number1[0], number1[1], number2);
 }
 
-function min_2(a, b) {
-    function res(c) {
-        return Math.min(a, b, c)
-    }
+var number1 = 2;
+var number2 = 5;
+var number3 = 3;
+console.log(minNumber([number1, number2], number3));
 
-    return res
-}
+number1 = 600;
+number2 = 342;
+number3 = 123;
+console.log(minNumber([number1, number2], number3));
 
-
-num_1 = 2
-num_2 = 5
-num_3 = 3
-console.log(min_([num_1, num_2], num_3))
-console.log(min_2(num_1, num_2)(num_3))
-
-
-num_1 = 600
-num_2 = 342
-num_3 = 123
-console.log(min_([num_1, num_2], num_3))
-console.log(min_2(num_1, num_2)(num_3))
-
-
-num_1 = 25
-num_2 = 21
-num_3 = 4
-console.log(min_([num_1, num_2], num_3))
-console.log(min_2(num_1, num_2)(num_3))
+number1 = 25;
+number2 = 21;
+number3 = 4;
+console.log(minNumber([number1, number2], number3));

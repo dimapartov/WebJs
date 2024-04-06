@@ -1,32 +1,18 @@
-function subtract(a, b) {
-    return a[0] + a[1] - b
+function subtract(number1, number2) {
+    return number1[0] + number1[1] - number2;
 }
 
-function one(a) {
-    function two(b) {
-        function three(c) {
-            return a + b - c
-        }
+var number1 = 23;
+var number2 = 6;
+var number3 = 10;
+console.log(subtract([number1, number2], number3));
 
-        return three
-    }
+number1 = 1;
+number2 = 17;
+number3 = 30;
+console.log(subtract([number1, number2], number3));
 
-    return two
-}
-
-num_1 = 23
-num_2 = 6
-num_3 = 10
-console.log(subtract([num_1, num_2], num_3))
-console.log(one(num_1)(num_2)(num_3))
-num_1 = 1
-num_2 = 17
-num_3 = 30
-console.log(subtract([num_1, num_2], num_3))
-console.log(one(num_1)(num_2)(num_3))
-
-num_1 = 42
-num_2 = 58
-num_3 = 100
-console.log(subtract([num_1, num_2], num_3))
-console.log(one(num_1)(num_2)(num_3))
+number1 = 42;
+number2 = 58;
+number3 = 100;
+console.log(subtract([number1, number2], number3));
